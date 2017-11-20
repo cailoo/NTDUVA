@@ -1,23 +1,80 @@
-package Diagrama de Classe;
+package br.ntduva.model;
 
+/**
+ *
+ * @author Leno Mota
+ */
 public abstract class Pessoa {
+    private Integer codigo;
+    private String endereco;
+    private String email;
+    private String telefoneResidencial;
+    private String telefoneCelular;
+    private String telefoneComercial;
+    private String CNPJ;
+    private String razaoSocial;
 
-	private String endereco;
+    public Integer getCodigo() {
+        return codigo;
+    }
 
-	private String email;
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
+    }
 
-	private String telefoneComercial;
+    public String getEndereco() {
+        return endereco;
+    }
 
-	private String telefoneCelular;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
-	private String telefoneResidencial;
+    public String getEmail() {
+        return email;
+    }
 
-	private String CPF;
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	private String nome;
+    public String getTelefoneComercial() {
+        return telefoneComercial;
+    }
 
-	private String CNPJ;
+    public void setTelefoneComercial(String telefoneComercial) {
+        this.telefoneComercial = telefoneComercial;
+    }
 
-	private String razaoSocial;
+    public String getTelefoneCelular() {
+        return telefoneCelular;
+    }
 
+    public void setTelefoneCelular(String telefoneCelular) {
+        this.telefoneCelular = telefoneCelular;
+    }
+
+    public String getTelefoneResidencial() {
+        return telefoneResidencial;
+    }
+
+    public void setTelefoneResidencial(String telefoneResidencial) {
+        this.telefoneResidencial = telefoneResidencial;
+    }
+
+    public String getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
+    }
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
 }
